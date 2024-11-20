@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FFZSF Map App</title>
+    <title>Redland City Offline Map App</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
@@ -15,133 +15,192 @@
         }
         body {
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
         #search-container {
             position: absolute;
             bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1000;
+            left: 10px;
+            right: 10px;
             display: flex;
             align-items: center;
-            background: white;
-            padding: 5px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
         #search-input {
+            flex-grow: 1;
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
-            border-radius: 3px;
-            margin-right: 5px;
+            border-radius: 20px;
+            outline: none;
         }
         #search-button {
-            padding: 10px;
+            padding: 10px 15px;
             font-size: 16px;
             background-color: #007bff;
             color: white;
             border: none;
-            border-radius: 3px;
+            border-radius: 20px;
             cursor: pointer;
+            margin-left: 10px;
         }
-        #back-button {
+        .label {
+            font-size: 16px;
+            color: white;
+            text-shadow: -1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333;
+        }
+        #locate-button {
             position: absolute;
             top: 10px;
             left: 10px;
             background: #007bff;
             color: white;
             border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        #back-button {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
             padding: 10px 20px;
-            border-radius: 5px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
             cursor: pointer;
             z-index: 1000;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        #back-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <button id="back-button" onclick="window.location.href='index.html'">Back to Home</button>
+    <div id="map"></div>
+    <button id="locate-button" title="Locate Me">
+        📍
+    </button>
     <div id="search-container">
-        <input id="search-input" type="text" placeholder="Enter site name...">
+        <input id="search-input" type="text" placeholder="Enter site name..." />
         <button id="search-button">Search</button>
     </div>
-    <div id="map"></div>
+    <button id="back-button" onclick="window.location.href='index.html'">Back to Home</button>
 
     <script>
-        // Initialize the map
-        var map = L.map('map').setView([-27.5237, 153.2500], 12);
+        // Initialize the map centered on Redland City, QLD
+        var redlandCityBounds = [[-27.7000, 153.1000], [-27.3000, 153.5000]];
+        var map = L.map('map', {
+            minZoom: 10,
+            maxZoom: 22, // Allow more detailed zooming
+            zoomControl: true,
+            maxBounds: redlandCityBounds,
+            maxBoundsViscosity: 1.0
+        }).setView([-27.5237, 153.2500], 12);
 
-        // Set up the tile layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        L.control.zoom({ position: 'topright' }).addTo(map);
+
+        // Set up the tile layer for satellite view
+        L.tileLayer('https://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
+            maxZoom: 22,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+            attribution: '&copy; <a href="https://www.google.com/intl/en/help/terms_maps/">Google Maps</a>'
         }).addTo(map);
 
-        // Load KML files for accurate suburb boundaries
-        function loadKmlFile(url, color) {
-            omnivore.kml(url)
-                .on('ready', function() {
-                    this.eachLayer(function(layer) {
-                        layer.setStyle({
-                            color: color,
-                            weight: 2,
-                            fillOpacity: 0.1
-                        });
-                        map.addLayer(layer);
+        var sites = {};
+        var labels = [];
+
+        // Function to load KML files and add polygons, labels, and optional width info
+        function loadKmlAndAddToMap(url, color, addLabels, showWidth) {
+            omnivore.kml(url).on('ready', function() {
+                var layer = this;
+                layer.eachLayer(function(layer) {
+                    var properties = layer.feature.properties;
+                    var bounds = layer.getBounds();
+                    var center = bounds.getCenter();
+
+                    // Add polygon styling
+                    layer.setStyle({
+                        color: color,
+                        fillColor: color,
+                        fillOpacity: addLabels ? 0.5 : 0.2,
+                        weight: addLabels ? 2 : 1
                     });
-                })
-                .on('error', function() {
-                    console.error('Error loading KML file:', url);
+
+                    // Add dynamic width label if enabled
+                    if (showWidth && properties['existing width']) {
+                        var widthLabel = L.marker(center, {
+                            icon: L.divIcon({
+                                className: 'label',
+                                html: `<b>${properties['existing width']}M</b>`,
+                                iconSize: [50, 20],
+                                iconAnchor: [25, -10]
+                            })
+                        });
+                        labels.push(widthLabel);
+                        map.addLayer(widthLabel);
+                    }
+
+                    // Add polygons to the map
+                    layer.addTo(map);
                 });
+            }).addTo(map);
         }
 
-        // Load all the KML files for each suburb
-        var kmlFiles = [
-            { url: 'assets/kml/REDLAND BAY.kml', color: 'green' },
-            { url: 'assets/kml/VICTORIA POINT.kml', color: 'green' },
-            { url: 'assets/kml/THORNLANDS.kml', color: 'green' },
-            { url: 'assets/kml/CLEVELAND.kml', color: 'yellow' },
-            { url: 'assets/kml/ORMISTON.kml', color: 'yellow' },
-            { url: 'assets/kml/CAPALABA.kml', color: 'orange' },
-            { url: 'assets/kml/THORNESIDE.kml', color: 'red' },
-            { url: 'assets/kml/BIRKDALE.kml', color: 'red' },
-            { url: 'assets/kml/WELLINGTON POINT.kml', color: 'red' },
-            { url: 'assets/kml/ALEXANDRA HILLS.kml', color: 'orange' },
-            { url: 'assets/kml/MOUNT COTTON (1).kml', color: 'blue' },
-            { url: 'assets/kml/SHELDON.kml', color: 'blue' }
-        ];
-
-        kmlFiles.forEach(function(file) {
-            loadKmlFile(file.url, file.color);
-        });
+        // Load KML files with different options
+        loadKmlAndAddToMap('ffz.kml', 'lime', true, true); // Green, add labels and width
+        loadKmlAndAddToMap('wbs.kml', 'green', false, false); // Light green without labels
+        loadKmlAndAddToMap('sla.kml', 'pink', false, true); // Pink with width labels only
 
         // Search functionality
         document.getElementById('search-button').addEventListener('click', function () {
-            var siteName = document.getElementById('search-input').value.trim().toLowerCase();
-            var found = false;
-            
-            kmlFiles.forEach(function(file) {
-                omnivore.kml(file.url).on('ready', function() {
-                    this.eachLayer(function(layer) {
-                        var layerName = layer.feature.properties.name || layer.feature.properties.Description || "";
-                        if (layerName.toLowerCase().includes(siteName)) {
-                            map.fitBounds(layer.getBounds());
-                            found = true;
-                        }
-                    });
+            var siteName = document.getElementById('search-input').value.trim();
+            if (sites.hasOwnProperty(siteName)) {
+                var site = sites[siteName];
+                map.fitBounds(site.getBounds());
+                site.eachLayer(function(layer) {
+                    layer.openPopup();
                 });
-            });
-
-            if (!found) {
+            } else {
                 alert('Site not found');
+            }
+        });
+
+        // Live location functionality
+        document.getElementById('locate-button').addEventListener('click', function () {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var lat = position.coords.latitude;
+                    var lng = position.coords.longitude;
+                    map.setView([lat, lng], 15);
+                    L.marker([lat, lng]).addTo(map)
+                        .bindPopup('You are here').openPopup();
+                }, function() {
+                    alert('Unable to retrieve your location');
+                });
+            } else {
+                alert('Geolocation is not supported by your browser');
             }
         });
     </script>
