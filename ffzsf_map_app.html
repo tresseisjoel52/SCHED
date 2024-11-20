@@ -25,95 +25,25 @@
             height: 100%;
             border: none;
         }
-        #search-container {
-            position: absolute;
-            bottom: 20px;
-            left: 10px;
-            right: 10px;
-            display: flex;
-            align-items: center;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 10px;
-            border-radius: 25px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-        }
-        #search-input {
-            flex-grow: 1;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            outline: none;
-        }
-        #search-button {
-            padding: 10px 15px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            margin-left: 10px;
-        }
         .label {
-            font-size: 16px;
+            font-size: 14px;
             color: white;
-            text-shadow: -1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333;
-        }
-        #locate-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-        }
-        #back-button {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-        #back-button:hover {
-            background-color: #0056b3;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px 8px;
+            border-radius: 5px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div id="map"></div>
-    <button id="locate-button" title="Locate Me">
-        📍
-    </button>
-    <div id="search-container">
-        <input id="search-input" type="text" placeholder="Enter site name..." />
-        <button id="search-button">Search</button>
-    </div>
-    <button id="back-button" onclick="window.location.href='index.html'">Back to Home</button>
 
     <script>
         // Initialize the map centered on Redland City, QLD
         var redlandCityBounds = [[-27.7000, 153.1000], [-27.3000, 153.5000]];
         var map = L.map('map', {
             minZoom: 10,
-            maxZoom: 22, // Allow more detailed zooming
+            maxZoom: 22,
             zoomControl: true,
             maxBounds: redlandCityBounds,
             maxBoundsViscosity: 1.0
@@ -128,10 +58,10 @@
             attribution: '&copy; <a href="https://www.google.com/intl/en/help/terms_maps/">Google Maps</a>'
         }).addTo(map);
 
-        var sites = {};
+        // Labels storage
         var labels = [];
 
-        // Function to load KML files and add polygons, labels, and optional width info
+        // Function to load KML files, add polygons, labels, and widths
         function loadKmlAndAddToMap(url, color, addLabels, showWidth) {
             omnivore.kml(url).on('ready', function() {
                 var layer = this;
@@ -140,12 +70,12 @@
                     var bounds = layer.getBounds();
                     var center = bounds.getCenter();
 
-                    // Add polygon styling
+                    // Add polygon styling with wider stroke
                     layer.setStyle({
                         color: color,
                         fillColor: color,
-                        fillOpacity: addLabels ? 0.5 : 0.2,
-                        weight: addLabels ? 2 : 1
+                        fillOpacity: 0.5,
+                        weight: 3 // Wider stroke
                     });
 
                     // Add dynamic width label if enabled
@@ -154,12 +84,26 @@
                             icon: L.divIcon({
                                 className: 'label',
                                 html: `<b>${properties['existing width']}M</b>`,
-                                iconSize: [50, 20],
-                                iconAnchor: [25, -10]
+                                iconSize: [70, 20],
+                                iconAnchor: [35, -10]
                             })
                         });
                         labels.push(widthLabel);
                         map.addLayer(widthLabel);
+                    }
+
+                    // Add name label at polygon center if enabled
+                    if (addLabels && properties.name) {
+                        var nameLabel = L.marker(center, {
+                            icon: L.divIcon({
+                                className: 'label',
+                                html: `<b>${properties.name}</b>`,
+                                iconSize: [100, 20],
+                                iconAnchor: [50, -10]
+                            })
+                        });
+                        labels.push(nameLabel);
+                        map.addLayer(nameLabel);
                     }
 
                     // Add polygons to the map
@@ -168,40 +112,25 @@
             }).addTo(map);
         }
 
-        // Load KML files with different options
+        // Load KML files with specific options
         loadKmlAndAddToMap('ffz.kml', 'lime', true, true); // Green, add labels and width
-        loadKmlAndAddToMap('wbs.kml', 'green', false, false); // Light green without labels
-        loadKmlAndAddToMap('sla.kml', 'pink', false, true); // Pink with width labels only
+        loadKmlAndAddToMap('wbs.kml', 'green', true, true); // Green, add labels and width
+        loadKmlAndAddToMap('sla.kml', 'pink', true, true); // Pink, add labels and width
 
-        // Search functionality
-        document.getElementById('search-button').addEventListener('click', function () {
-            var siteName = document.getElementById('search-input').value.trim();
-            if (sites.hasOwnProperty(siteName)) {
-                var site = sites[siteName];
-                map.fitBounds(site.getBounds());
-                site.eachLayer(function(layer) {
-                    layer.openPopup();
-                });
-            } else {
-                alert('Site not found');
-            }
-        });
-
-        // Live location functionality
-        document.getElementById('locate-button').addEventListener('click', function () {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    var lat = position.coords.latitude;
-                    var lng = position.coords.longitude;
-                    map.setView([lat, lng], 15);
-                    L.marker([lat, lng]).addTo(map)
-                        .bindPopup('You are here').openPopup();
-                }, function() {
-                    alert('Unable to retrieve your location');
-                });
-            } else {
-                alert('Geolocation is not supported by your browser');
-            }
+        // Dynamic label visibility based on zoom level
+        map.on('zoomend moveend', function() {
+            var currentZoom = map.getZoom();
+            labels.forEach(function(label) {
+                if (currentZoom >= 15) {
+                    if (!map.hasLayer(label)) {
+                        map.addLayer(label);
+                    }
+                } else {
+                    if (map.hasLayer(label)) {
+                        map.removeLayer(label);
+                    }
+                }
+            });
         });
     </script>
 </body>
