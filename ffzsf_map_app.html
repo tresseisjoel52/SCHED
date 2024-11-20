@@ -208,30 +208,49 @@
             }
         });
 
-        // Define boundaries for each region and add to map
-        function addBoundary(coordinates, label, color) {
-            var boundary = L.polyline(coordinates, {
-                color: color,
-                weight: 2,
-                fillOpacity: 0
-            }).addTo(map);
-            var center = L.latLngBounds(coordinates).getCenter();
-            L.marker(center, {
-                icon: L.divIcon({
-                    className: 'label',
-                    html: '<b>' + label + '</b>',
-                    iconSize: [100, 20],
-                    iconAnchor: [50, -10]
-                })
-            }).addTo(map);
-        }
+        // Load KML files for accurate suburb boundaries
+function loadSuburbBoundary(url, color) {
+    omnivore.kml(url)
+        .on('ready', function() {
+            this.eachLayer(function(layer) {
+                layer.setStyle({
+                    color: color,
+                    weight: 2,
+                    fillOpacity: 0.1
+                });
+                map.addLayer(layer);
 
-        // Add boundaries for regions
-        addBoundary([[-27.5000, 153.2000], [-27.4500, 153.2500], [-27.4500, 153.3000]], '1', 'red'); // Thorneside, Birkdale, Wellington Point
-        addBoundary([[-27.5500, 153.2500], [-27.5000, 153.3000], [-27.5200, 153.3500]], '2', 'orange'); // Capalaba, Alexandra Hills
-        addBoundary([[-27.6000, 153.3000], [-27.5800, 153.3500], [-27.5900, 153.4000]], '3', 'yellow'); // Ormiston, Cleveland
-        addBoundary([[-27.6500, 153.4000], [-27.6300, 153.4500], [-27.6400, 153.5000]], '4', 'green'); // Thornlands, Victoria Point, Redland Bay
-        addBoundary([[-27.7000, 153.3500], [-27.6800, 153.4000], [-27.6900, 153.4500]], '5', 'blue'); // Mount Cotton, Sheldon
+                // Add a label to the center of the boundary
+                var bounds = layer.getBounds();
+                var center = bounds.getCenter();
+                var label = layer.feature.properties.name || layer.feature.properties.Description || "Unnamed";
+                L.marker(center, {
+                    icon: L.divIcon({
+                        className: 'label',
+                        html: `<b>${label}</b>`,
+                        iconSize: [100, 20],
+                        iconAnchor: [50, -10]
+                    })
+                }).addTo(map);
+            });
+        })
+        .addTo(map);
+}
+
+// Load all the KML files for each suburb
+loadSuburbBoundary('assets/kml/REDLAND BAY.kml', 'green');
+loadSuburbBoundary('assets/kml/VICTORIA POINT.kml', 'green');
+loadSuburbBoundary('assets/kml/THORNLANDS.kml', 'green');
+loadSuburbBoundary('assets/kml/CLEVELAND.kml', 'yellow');
+loadSuburbBoundary('assets/kml/ORMISTON.kml', 'yellow');
+loadSuburbBoundary('assets/kml/CAPALABA.kml', 'orange');
+loadSuburbBoundary('assets/kml/THORNESIDE.kml', 'red');
+loadSuburbBoundary('assets/kml/BIRKDALE.kml', 'red');
+loadSuburbBoundary('assets/kml/WELLINGTON POINT.kml', 'red');
+loadSuburbBoundary('assets/kml/ALEXANDRA HILLS.kml', 'orange');
+loadSuburbBoundary('assets/kml/MOUNT COTTON (1).kml', 'blue');
+loadSuburbBoundary('assets/kml/SHELDON.kml', 'blue');
+
 
         // Add labels for "N" and "S" within region 4
         L.marker([-27.6400, 153.4500], {
@@ -253,4 +272,3 @@
     </script>
 </body>
 </html>
-
