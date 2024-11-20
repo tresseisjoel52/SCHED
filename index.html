@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -15,16 +16,34 @@
             font-size: 100px;
             background-color: #fff;
         }
+        .menu {
+            margin-top: 20px;
+        }
+        .button {
+            font-size: 24px;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
-                window.location.href = "SiteFind.html";
+                document.querySelector('.hey-message').style.display = 'none';
+                document.querySelector('.menu').style.display = 'block';
             }, 1000);
         });
     </script>
 </head>
 <body>
-    <div>Hey</div>
+    <div class="hey-message">Hey</div>
+    <div class="menu" style="display: none;">
+        <button class="button" onclick="window.location.href='SiteFind.html'">Park Please</button>
+        <button class="button" onclick="window.location.href='ffzsf_map_app.html'">Fire, Thanks</button>
+    </div>
 </body>
 </html>
