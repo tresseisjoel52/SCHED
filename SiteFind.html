@@ -132,34 +132,36 @@
         var sites = {};
         var labels = [];
 
-        // Load KML files and process polygons
+        // Load KML files and add labels
         function loadKmlAndAddToMap(url, color) {
             omnivore.kml(url).on('ready', function() {
                 var layer = this;
                 layer.eachLayer(function(layer) {
                     var name = layer.feature.properties.name;
-                    if (sites.hasOwnProperty(name)) {
-                        // Merge polygons if duplicate names exist
-                        sites[name].addLayer(layer);
-                    } else {
-                        var group = L.featureGroup([layer]);
-                        group.setStyle({ color: color, fillColor: color, fillOpacity: 0.5, weight: 1 });
-                        sites[name] = group;
-                        group.addTo(map);
+                    var bounds = layer.getBounds();
+                    var center = bounds.getCenter();
 
-                        // Add label for each polygon with better styling and visibility control
-                        var bounds = layer.getBounds();
-                        var center = bounds.getCenter();
-                        var label = L.marker(center, {
-                            icon: L.divIcon({
-                                className: 'label',
-                                html: '<b>' + name + '</b>',
-                                iconSize: [100, 20],
-                                iconAnchor: [50, -10]
-                            })
-                        });
-                        labels.push({ label: label, bounds: bounds });
-                    }
+                    // Create label
+                    var label = L.marker(center, {
+                        icon: L.divIcon({
+                            className: 'label',
+                            html: `<b>${name}</b>`,
+                            iconSize: [100, 20],
+                            iconAnchor: [50, -10]
+                        })
+                    });
+
+                    // Store labels for dynamic visibility control
+                    labels.push({ label: label, bounds: bounds });
+
+                    // Add polygon and label to the map
+                    layer.setStyle({
+                        color: color,
+                        fillColor: color,
+                        fillOpacity: 0.5,
+                        weight: 1
+                    });
+                    layer.addTo(map);
                 });
             }).addTo(map);
         }
@@ -168,6 +170,22 @@
         loadKmlAndAddToMap('11_cpy.kml', 'purple');
         loadKmlAndAddToMap('15_cpy.kml', '#228b22'); // Slightly darker green
         loadKmlAndAddToMap('18_cpy.kml', 'blue');
+
+        // Dynamically manage label visibility based on zoom
+        map.on('zoomend moveend', function() {
+            var currentZoom = map.getZoom();
+            labels.forEach(function(item) {
+                if (currentZoom >= 15 && map.getBounds().contains(item.bounds)) {
+                    if (!map.hasLayer(item.label)) {
+                        map.addLayer(item.label);
+                    }
+                } else {
+                    if (map.hasLayer(item.label)) {
+                        map.removeLayer(item.label);
+                    }
+                }
+            });
+        });
 
         // Search functionality
         document.getElementById('search-button').addEventListener('click', function () {
