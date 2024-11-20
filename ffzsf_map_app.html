@@ -22,8 +22,26 @@
         }
         #map {
             width: 100%;
-            height: 100%;
+            height: 90%;
             border: none;
+        }
+        #back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        .label {
+            font-size: 16px;
+            color: white;
+            text-shadow: -1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333;
         }
         #search-container {
             position: absolute;
@@ -77,10 +95,14 @@
             cursor: pointer;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
             z-index: 1000;
-        }
+        }    
     </style>
 </head>
 <body>
+    
+ <button id="back-button" onclick="window.location.href='index.html'">Back to Home</button>
+    <div id="map"></div>
+
     <div id="map"></div>
     <button id="locate-button" title="Locate Me">
         📍
@@ -208,48 +230,48 @@
             }
         });
 
-        // Load KML files for accurate suburb boundaries
-function loadSuburbBoundary(url, color) {
-    omnivore.kml(url)
-        .on('ready', function() {
-            this.eachLayer(function(layer) {
-                layer.setStyle({
-                    color: color,
-                    weight: 2,
-                    fillOpacity: 0.1
-                });
-                map.addLayer(layer);
+               // Load KML files for accurate suburb boundaries
+        function loadSuburbBoundary(url, color) {
+            omnivore.kml(url)
+                .on('ready', function() {
+                    this.eachLayer(function(layer) {
+                        layer.setStyle({
+                            color: color,
+                            weight: 2,
+                            fillOpacity: 0.1
+                        });
+                        map.addLayer(layer);
 
-                // Add a label to the center of the boundary
-                var bounds = layer.getBounds();
-                var center = bounds.getCenter();
-                var label = layer.feature.properties.name || layer.feature.properties.Description || "Unnamed";
-                L.marker(center, {
-                    icon: L.divIcon({
-                        className: 'label',
-                        html: `<b>${label}</b>`,
-                        iconSize: [100, 20],
-                        iconAnchor: [50, -10]
-                    })
-                }).addTo(map);
-            });
-        })
-        .addTo(map);
-}
+                        // Add a label to the center of the boundary
+                        var bounds = layer.getBounds();
+                        var center = bounds.getCenter();
+                        var label = layer.feature.properties.name || layer.feature.properties.Description || "Unnamed";
+                        L.marker(center, {
+                            icon: L.divIcon({
+                                className: 'label',
+                                html: `<b>${label}</b>`,
+                                iconSize: [100, 20],
+                                iconAnchor: [50, -10]
+                            })
+                        }).addTo(map);
+                    });
+                })
+                .addTo(map);
+        }
 
-// Load all the KML files for each suburb
-loadSuburbBoundary('assets/kml/REDLAND BAY.kml', 'green');
-loadSuburbBoundary('assets/kml/VICTORIA POINT.kml', 'green');
-loadSuburbBoundary('assets/kml/THORNLANDS.kml', 'green');
-loadSuburbBoundary('assets/kml/CLEVELAND.kml', 'yellow');
-loadSuburbBoundary('assets/kml/ORMISTON.kml', 'yellow');
-loadSuburbBoundary('assets/kml/CAPALABA.kml', 'orange');
-loadSuburbBoundary('assets/kml/THORNESIDE.kml', 'red');
-loadSuburbBoundary('assets/kml/BIRKDALE.kml', 'red');
-loadSuburbBoundary('assets/kml/WELLINGTON POINT.kml', 'red');
-loadSuburbBoundary('assets/kml/ALEXANDRA HILLS.kml', 'orange');
-loadSuburbBoundary('assets/kml/MOUNT COTTON (1).kml', 'blue');
-loadSuburbBoundary('assets/kml/SHELDON.kml', 'blue');
+        // Load all the KML files for each suburb
+        loadSuburbBoundary('assets/kml/REDLAND BAY.kml', 'green');
+        loadSuburbBoundary('assets/kml/VICTORIA POINT.kml', 'green');
+        loadSuburbBoundary('assets/kml/THORNLANDS.kml', 'green');
+        loadSuburbBoundary('assets/kml/CLEVELAND.kml', 'yellow');
+        loadSuburbBoundary('assets/kml/ORMISTON.kml', 'yellow');
+        loadSuburbBoundary('assets/kml/CAPALABA.kml', 'orange');
+        loadSuburbBoundary('assets/kml/THORNESIDE.kml', 'red');
+        loadSuburbBoundary('assets/kml/BIRKDALE.kml', 'red');
+        loadSuburbBoundary('assets/kml/WELLINGTON POINT.kml', 'red');
+        loadSuburbBoundary('assets/kml/ALEXANDRA HILLS.kml', 'orange');
+        loadSuburbBoundary('assets/kml/MOUNT COTTON (1).kml', 'blue');
+        loadSuburbBoundary('assets/kml/SHELDON.kml', 'blue');
 
 
         // Add labels for "N" and "S" within region 4
