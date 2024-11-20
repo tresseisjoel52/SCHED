@@ -78,6 +78,23 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
             z-index: 1000;
         }
+        #back-button {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #back-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -152,22 +169,6 @@
         loadKmlAndAddToMap('15_cpy.kml', '#228b22'); // Slightly darker green
         loadKmlAndAddToMap('18_cpy.kml', 'blue');
 
-        // Display labels only at appropriate zoom levels
-        map.on('zoomend moveend', function() {
-            var currentZoom = map.getZoom();
-            labels.forEach(function(item) {
-                if (currentZoom >= 15 && map.getBounds().contains(item.bounds)) {
-                    if (!map.hasLayer(item.label)) {
-                        map.addLayer(item.label);
-                    }
-                } else {
-                    if (map.hasLayer(item.label)) {
-                        map.removeLayer(item.label);
-                    }
-                }
-            });
-        });
-
         // Search functionality
         document.getElementById('search-button').addEventListener('click', function () {
             var siteName = document.getElementById('search-input').value.trim();
@@ -198,68 +199,6 @@
                 alert('Geolocation is not supported by your browser');
             }
         });
-
-      // Load KML files for accurate suburb boundaries
-function loadSuburbBoundary(url, color) {
-    omnivore.kml(url)
-        .on('ready', function() {
-            this.eachLayer(function(layer) {
-                layer.setStyle({
-                    color: color,
-                    weight: 2,
-                    fillOpacity: 0.1
-                });
-                map.addLayer(layer);
-
-                // Add a label to the center of the boundary
-                var bounds = layer.getBounds();
-                var center = bounds.getCenter();
-                var label = layer.feature.properties.name || layer.feature.properties.Description || "Unnamed";
-                L.marker(center, {
-                    icon: L.divIcon({
-                        className: 'label',
-                        html: `<b>${label}</b>`,
-                        iconSize: [100, 20],
-                        iconAnchor: [50, -10]
-                    })
-                }).addTo(map);
-            });
-        })
-        .addTo(map);
-}
-
-// Load all the KML files for each suburb
-loadSuburbBoundary('assets/kml/REDLAND BAY.kml', 'green');
-loadSuburbBoundary('assets/kml/VICTORIA POINT.kml', 'green');
-loadSuburbBoundary('assets/kml/THORNLANDS.kml', 'green');
-loadSuburbBoundary('assets/kml/CLEVELAND.kml', 'yellow');
-loadSuburbBoundary('assets/kml/ORMISTON.kml', 'yellow');
-loadSuburbBoundary('assets/kml/CAPALABA.kml', 'orange');
-loadSuburbBoundary('assets/kml/THORNESIDE.kml', 'red');
-loadSuburbBoundary('assets/kml/BIRKDALE.kml', 'red');
-loadSuburbBoundary('assets/kml/WELLINGTON POINT.kml', 'red');
-loadSuburbBoundary('assets/kml/ALEXANDRA HILLS.kml', 'orange');
-loadSuburbBoundary('assets/kml/MOUNT COTTON (1).kml', 'blue');
-loadSuburbBoundary('assets/kml/SHELDON.kml', 'blue');
-
-
-        // Add labels for "N" and "S" within region 4
-        L.marker([-27.6400, 153.4500], {
-            icon: L.divIcon({
-                className: 'label',
-                html: '<b>N</b>',
-                iconSize: [50, 20],
-                iconAnchor: [25, -10]
-            })
-        }).addTo(map);
-        L.marker([-27.6700, 153.4800], {
-            icon: L.divIcon({
-                className: 'label',
-                html: '<b>S</b>',
-                iconSize: [50, 20],
-                iconAnchor: [25, -10]
-            })
-        }).addTo(map);
     </script>
 </body>
 </html>
