@@ -64,7 +64,7 @@
         #locate-button {
             position: absolute;
             top: 10px;
-            right: 10px;
+            left: 10px;
             background: #007bff;
             color: white;
             border: none;
@@ -83,7 +83,7 @@
 <body>
     <div id="map"></div>
     <button id="locate-button" title="Locate Me">
-        <i class="fas fa-location-arrow"></i>
+        📍
     </button>
     <div id="search-container">
         <input id="search-input" type="text" placeholder="Enter site name..." />
@@ -148,7 +148,7 @@
 
         // Load KML files with different colors
         loadKmlAndAddToMap('11_cpy.kml', 'purple');
-        loadKmlAndAddToMap('15_cpy.kml', '#66ff66'); // Brighter green
+        loadKmlAndAddToMap('15_cpy.kml', '#228b22'); // Slightly darker green
         loadKmlAndAddToMap('18_cpy.kml', 'blue');
 
         // Display labels only at appropriate zoom levels
@@ -197,6 +197,49 @@
                 alert('Geolocation is not supported by your browser');
             }
         });
+
+        // Define boundaries for each region and add to map
+        function addBoundary(coordinates, label, color) {
+            var boundary = L.polyline(coordinates, {
+                color: color,
+                weight: 2,
+                fillOpacity: 0
+            }).addTo(map);
+            var center = L.latLngBounds(coordinates).getCenter();
+            L.marker(center, {
+                icon: L.divIcon({
+                    className: 'label',
+                    html: '<b>' + label + '</b>',
+                    iconSize: [100, 20],
+                    iconAnchor: [50, -10]
+                })
+            }).addTo(map);
+        }
+
+        // Add boundaries for regions
+        addBoundary([[-27.5000, 153.2000], [-27.4500, 153.2500], [-27.4500, 153.3000]], '1', 'red'); // Thorneside, Birkdale, Wellington Point
+        addBoundary([[-27.5500, 153.2500], [-27.5000, 153.3000], [-27.5200, 153.3500]], '2', 'orange'); // Capalaba, Alexandra Hills
+        addBoundary([[-27.6000, 153.3000], [-27.5800, 153.3500], [-27.5900, 153.4000]], '3', 'yellow'); // Ormiston, Cleveland
+        addBoundary([[-27.6500, 153.4000], [-27.6300, 153.4500], [-27.6400, 153.5000]], '4', 'green'); // Thornlands, Victoria Point, Redland Bay
+        addBoundary([[-27.7000, 153.3500], [-27.6800, 153.4000], [-27.6900, 153.4500]], '5', 'blue'); // Mount Cotton, Sheldon
+
+        // Add labels for "N" and "S" within region 4
+        L.marker([-27.6400, 153.4500], {
+            icon: L.divIcon({
+                className: 'label',
+                html: '<b>N</b>',
+                iconSize: [50, 20],
+                iconAnchor: [25, -10]
+            })
+        }).addTo(map);
+        L.marker([-27.6700, 153.4800], {
+            icon: L.divIcon({
+                className: 'label',
+                html: '<b>S</b>',
+                iconSize: [50, 20],
+                iconAnchor: [25, -10]
+            })
+        }).addTo(map);
     </script>
 </body>
 </html>
