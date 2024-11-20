@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFZSF Map App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #search-container {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        #search-input {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+        #search-button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .label {
+            font-size: 16px;
+            color: white;
+            text-shadow: -1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333;
+        }
+        #locate-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <button id="locate-button" title="Locate Me">
+        📍
+    </button>
+    <div id="search-container">
+        <input id="search-input" type="text" placeholder="Enter site name..." />
+        <button id="search-button">Search</button>
+    </div>
+
+    <script>
+        // Initialize the map centered on Redland City, QLD
+        var redlandCityBounds = [[-27.7000, 153.1000], [-27.3000, 153.5000]];
+        var map = L.map('map', {
+            minZoom: 10,
+            maxZoom: 18,
+            zoomControl: false,
+            maxBounds: redlandCityBounds,
+            maxBoundsViscosity: 1.0
+        }).setView([-27.5237, 153.2500], 12);
+
+        L.control.zoom({ position: 'topright' }).addTo(map);
+
+        // Set up the tile layer for a clearer satellite view with property boundaries
+        L.tileLayer('https://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
+            maxZoom: 19,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+            attribution: '&copy; <a href="https://www.google.com/intl/en/help/terms_maps/">Google Maps</a>'
+        }).addTo(map);
+
+        // Placeholder for site data from KML files
+        var sites = {};
+        var labels = [];
+
+        // Load KML files and process polygons
+        function loadKmlAndAddToMap(url, color, thickerStroke = false, addDescription = false) {
+            omnivore.kml(url).on('ready', function() {
+                var layer = this;
+                layer.eachLayer(function(layer) {
+                    var name = layer.feature.properties.name;
+                    var description = layer.feature.properties.description;
+                    if (sites.hasOwnProperty(name)) {
+                        // Merge polygons if duplicate names exist
+                        sites[name].addLayer(layer);
+                    } else {
+                        var group = L.featureGroup([layer]);
+                        group.setStyle({ 
+                            color: color, 
+                            fillColor: color, 
+                            fillOpacity: 0.5, 
+                            weight: thickerStroke ? 3 : 1
+                        });
+                        sites[name] = group;
+                        group.addTo(map);
+
+                        // Add label for each polygon with better styling and visibility control
+                        var bounds = layer.getBounds();
+                        var center = bounds.getCenter();
+                        var labelHtml = '<b>' + name + '</b>';
+                        if (addDescription && description) {
+                            labelHtml += '<br><div style="font-size: 12px; background: white; color: black; padding: 2px 5px; border-radius: 5px;">' + description + 'M</div>';
+                        }
+                        var label = L.marker(center, {
+                            icon: L.divIcon({
+                                className: 'label',
+                                html: labelHtml,
+                                iconSize: [150, 40],
+                                iconAnchor: [75, -10]
+                            })
+                        });
+                        labels.push({ label: label, bounds: bounds });
+                    }
+                });
+            }).addTo(map);
+        }
+
+        // Load KML files with different colors and styles
+        loadKmlAndAddToMap('ffz.kml', 'lime', true, true); // Neon green, thicker stroke, add description
+        loadKmlAndAddToMap('wbs.kml', 'lime', false, false); // Neon green fill, dark green stroke
+        loadKmlAndAddToMap('sla.kml', 'pink', false, false); // Pink fill, purple stroke
+
+        // Display labels only at appropriate zoom levels
+        map.on('zoomend moveend', function() {
+            var currentZoom = map.getZoom();
+            labels.forEach(function(item) {
+                if (currentZoom >= 15 && map.getBounds().contains(item.bounds)) {
+                    if (!map.hasLayer(item.label)) {
+                        map.addLayer(item.label);
+                    }
+                } else {
+                    if (map.hasLayer(item.label)) {
+                        map.removeLayer(item.label);
+                    }
+                }
+            });
+        });
+
+        // Search functionality
+        document.getElementById('search-button').addEventListener('click', function () {
+            var siteName = document.getElementById('search-input').value.trim();
+            if (sites.hasOwnProperty(siteName)) {
+                var site = sites[siteName];
+                map.fitBounds(site.getBounds());
+                site.eachLayer(function(layer) {
+                    layer.openPopup();
+                });
+            } else {
+                alert('Site not found');
+            }
+        });
+
+        // Live location functionality
+        document.getElementById('locate-button').addEventListener('click', function () {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var lat = position.coords.latitude;
+                    var lng = position.coords.longitude;
+                    map.setView([lat, lng], 15);
+                    L.marker([lat, lng]).addTo(map)
+                        .bindPopup('You are here').openPopup();
+                }, function() {
+                    alert('Unable to retrieve your location');
+                });
+            } else {
+                alert('Geolocation is not supported by your browser');
+            }
+        });
+
+        // Define boundaries for each region and add to map
+        function addBoundary(coordinates, label, color) {
+            var boundary = L.polyline(coordinates, {
+                color: color,
+                weight: 2,
+                fillOpacity: 0
+            }).addTo(map);
+            var center = L.latLngBounds(coordinates).getCenter();
+            L.marker(center, {
+                icon: L.divIcon({
+                    className: 'label',
+                    html: '<b>' + label + '</b>',
+                    iconSize: [100, 20],
+                    iconAnchor: [50, -10]
+                })
+            }).addTo(map);
+        }
+
+        // Add boundaries for regions
+        addBoundary([[-27.5000, 153.2000], [-27.4500, 153.2500], [-27.4500, 153.3000]], '1', 'red'); // Thorneside, Birkdale, Wellington Point
+        addBoundary([[-27.5500, 153.2500], [-27.5000, 153.3000], [-27.5200, 153.3500]], '2', 'orange'); // Capalaba, Alexandra Hills
+        addBoundary([[-27.6000, 153.3000], [-27.5800, 153.3500], [-27.5900, 153.4000]], '3', 'yellow'); // Ormiston, Cleveland
+        addBoundary([[-27.6500, 153.4000], [-27.6300, 153.4500], [-27.6400, 153.5000]], '4', 'green'); // Thornlands, Victoria Point, Redland Bay
+        addBoundary([[-27.7000, 153.3500], [-27.6800, 153.4000], [-27.6900, 153.4500]], '5', 'blue'); // Mount Cotton, Sheldon
+
+        // Add labels for "N" and "S" within region 4
+        L.marker([-27.6400, 153.4500], {
+            icon: L.divIcon({
+                className: 'label',
+                html: '<b>N</b>',
+                iconSize: [50, 20],
+                iconAnchor: [25, -10]
+            })
+        }).addTo(map);
+        L.marker([-27.6700, 153.4800], {
+            icon: L.divIcon({
+                className: 'label',
+                html: '<b>S</b>',
+                iconSize: [50, 20],
+                iconAnchor: [25, -10]
+            })
+        }).addTo(map);
+    </script>
+</body>
+</html>
+
