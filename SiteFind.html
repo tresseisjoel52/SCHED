@@ -186,20 +186,50 @@
                 }
             });
         });
+// Populate sites object during KML loading
+function loadKmlAndAddToMap(url, color) {
+    omnivore.kml(url).on('ready', function () {
+        var layerGroup = L.layerGroup();
+        this.eachLayer(function (layer) {
+            var name = layer.feature.properties.name;
+            var bounds = layer.getBounds();
 
-        // Search functionality
-        document.getElementById('search-button').addEventListener('click', function () {
-            var siteName = document.getElementById('search-input').value.trim();
-            if (sites.hasOwnProperty(siteName)) {
-                var site = sites[siteName];
-                map.fitBounds(site.getBounds());
-                site.eachLayer(function(layer) {
-                    layer.openPopup();
-                });
-            } else {
-                alert('Site not found');
+            // Add the site to the sites object
+            sites[name] = {
+                layerGroup: layerGroup,
+                bounds: bounds,
+            };
+
+            // Style and add to layer group
+            layer.setStyle({
+                color: color,
+                fillColor: color,
+                fillOpacity: 0.5,
+                weight: 1
+            });
+            layerGroup.addLayer(layer);
+        });
+        layerGroup.addTo(map);
+    }).addTo(map);
+}
+
+// Enhanced search functionality
+document.getElementById('search-button').addEventListener('click', function () {
+    var siteName = document.getElementById('search-input').value.trim().toLowerCase();
+    var matchedSite = Object.keys(sites).find(key => key.toLowerCase() === siteName);
+
+    if (matchedSite) {
+        var site = sites[matchedSite];
+        map.fitBounds(site.bounds);
+        site.layerGroup.eachLayer(function (layer) {
+            if (layer.openPopup) {
+                layer.openPopup();
             }
         });
+    } else {
+        alert('Site not found');
+    }
+});
 
         // Live location functionality
         document.getElementById('locate-button').addEventListener('click', function () {
