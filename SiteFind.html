@@ -166,41 +166,32 @@
             }).addTo(map);
         }
 
-        // Load KML files with different colors
-        loadKmlAndAddToMap('11_cpy.kml', 'purple');
-        loadKmlAndAddToMap('15_cpy.kml', '#228b22'); // Slightly darker green
-        loadKmlAndAddToMap('18_cpy.kml', 'blue');
-
-        // Dynamically manage label visibility based on zoom
-        map.on('zoomend moveend', function() {
-            var currentZoom = map.getZoom();
-            labels.forEach(function(item) {
-                if (currentZoom >= 15 && map.getBounds().contains(item.bounds)) {
-                    if (!map.hasLayer(item.label)) {
-                        map.addLayer(item.label);
-                    }
-                } else {
-                    if (map.hasLayer(item.label)) {
-                        map.removeLayer(item.label);
-                    }
-                }
-            });
-        });
-// Populate sites object during KML loading
+      // Function to load KML and add to map with labels
 function loadKmlAndAddToMap(url, color) {
     omnivore.kml(url).on('ready', function () {
         var layerGroup = L.layerGroup();
+
         this.eachLayer(function (layer) {
-            var name = layer.feature.properties.name;
+            var name = layer.feature?.properties?.name; // Safely access name property
             var bounds = layer.getBounds();
+            var center = bounds.getCenter();
 
-            // Add the site to the sites object
-            sites[name] = {
-                layerGroup: layerGroup,
-                bounds: bounds,
-            };
+            if (name) {
+                // Create a label as a marker with a divIcon
+                var label = L.marker(center, {
+                    icon: L.divIcon({
+                        className: 'label',
+                        html: `<b>${name}</b>`,
+                        iconSize: [100, 20],
+                        iconAnchor: [50, -10]
+                    })
+                }).addTo(map);
 
-            // Style and add to layer group
+                // Store the label in the labels array
+                labels.push({ label: label, bounds: bounds });
+            }
+
+            // Add layer to layerGroup
             layer.setStyle({
                 color: color,
                 fillColor: color,
@@ -208,10 +199,39 @@ function loadKmlAndAddToMap(url, color) {
                 weight: 1
             });
             layerGroup.addLayer(layer);
+
+            // Add site to the sites object
+            sites[name] = {
+                layerGroup: layerGroup,
+                bounds: bounds
+            };
         });
+
         layerGroup.addTo(map);
     }).addTo(map);
 }
+
+// Function to dynamically manage labels based on zoom level
+map.on('zoomend moveend', function () {
+    var currentZoom = map.getZoom();
+
+    labels.forEach(function (item) {
+        if (currentZoom >= 15 && map.getBounds().contains(item.bounds)) {
+            if (!map.hasLayer(item.label)) {
+                map.addLayer(item.label);
+            }
+        } else {
+            if (map.hasLayer(item.label)) {
+                map.removeLayer(item.label);
+            }
+        }
+    });
+});
+
+// Load KML files with labels
+loadKmlAndAddToMap('11_cpy.kml', 'purple');
+loadKmlAndAddToMap('15_cpy.kml', '#228b22'); // Slightly darker green
+loadKmlAndAddToMap('18_cpy.kml', 'blue');
 
 // Enhanced search functionality
 document.getElementById('search-button').addEventListener('click', function () {
