@@ -103,7 +103,7 @@
         📍
     </button>
     <div id="search-container">
-        <input id="search-input" type="text" placeholder="Enter site name..." />
+        <input id="search-input" type="text" placeholder="Enter site ID..." />
         <button id="search-button">Search</button>
     </div>
     <button id="back-button" onclick="window.location.href='index.html'">Back to Home</button>
@@ -247,7 +247,7 @@ document.getElementById('search-button').addEventListener('click', function () {
             }
         });
     } else {
-        alert('Site not found');
+        alert('Site not found. Make sure site ID starts with "M" (e.g. M0123)');
     }
 });
 
