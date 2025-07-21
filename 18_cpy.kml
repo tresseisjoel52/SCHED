@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
-<Schema name="2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_" id="2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-	<SimpleField name="Name" type="string"></SimpleField>
+<Schema name="2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_" id="2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 	<SimpleField name="Description" type="string"></SimpleField>
 	<SimpleField name="OBJECTID" type="int"></SimpleField>
 	<SimpleField name="Tender_Doc" type="string"></SimpleField>
+	<SimpleField name="CutsPerYear" type="int"></SimpleField>
 	<SimpleField name="AreaType" type="string"></SimpleField>
 	<SimpleField name="Agent" type="string"></SimpleField>
 	<SimpleField name="OSS_CATCHMENT" type="string"></SimpleField>
 	<SimpleField name="GlobalID" type="string"></SimpleField>
 </Schema>
-<Folder><name>2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_</name>
+<Folder><name>2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_</name>
   <Placemark>
 	<name>M0142</name>
-	<description>18</description>
+	<description>Montgomery Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Montgomery Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -29,12 +29,12 @@
   </Placemark>
   <Placemark>
 	<name>M0044</name>
-	<description>18</description>
+	<description>Indigiscapes &amp; Lyndon Road</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Indigiscapes &amp; Lyndon Road</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">10</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -44,12 +44,12 @@
   </Placemark>
   <Placemark>
 	<name>M0054</name>
-	<description>18</description>
+	<description>Wimborne Road Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Wimborne Road Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">11</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -59,12 +59,12 @@
   </Placemark>
   <Placemark>
 	<name>M0294</name>
-	<description>18</description>
+	<description>Pitt &amp; Salisbury 1</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Pitt &amp; Salisbury 1</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">16</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -74,12 +74,12 @@
   </Placemark>
   <Placemark>
 	<name>M0295</name>
-	<description>18</description>
+	<description>Pitt &amp; Salisbury 2</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Pitt &amp; Salisbury 2</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">17</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -89,12 +89,12 @@
   </Placemark>
   <Placemark>
 	<name>M0082</name>
-	<description>18</description>
+	<description>Moreton View Parade</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Moreton View Parade</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">19</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -104,12 +104,12 @@
   </Placemark>
   <Placemark>
 	<name>M0092</name>
-	<description>18</description>
+	<description>The Boulevard</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">The Boulevard</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">23</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -119,12 +119,12 @@
   </Placemark>
   <Placemark>
 	<name>M0084</name>
-	<description>18</description>
+	<description>The Drop Off 1</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">The Drop Off 1</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">24</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -134,12 +134,12 @@
   </Placemark>
   <Placemark>
 	<name>M0085</name>
-	<description>18</description>
+	<description>The Drop Off 2</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">The Drop Off 2</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">25</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -149,12 +149,12 @@
   </Placemark>
   <Placemark>
 	<name>M0078</name>
-	<description>18</description>
+	<description>Egret Drive 1</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Egret Drive 1</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">37</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -164,12 +164,12 @@
   </Placemark>
   <Placemark>
 	<name>M0265</name>
-	<description>18</description>
+	<description>Egret Drive 2</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Egret Drive 2</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">38</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -179,12 +179,12 @@
   </Placemark>
   <Placemark>
 	<name>M0266</name>
-	<description>18</description>
+	<description>Egret Drive 3</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Egret Drive 3</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">39</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -194,12 +194,12 @@
   </Placemark>
   <Placemark>
 	<name>M0067</name>
-	<description>18</description>
+	<description>Outlook Parade</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Outlook Parade</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">40</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">3</SimpleData>
@@ -209,12 +209,12 @@
   </Placemark>
   <Placemark>
 	<name>M0032</name>
-	<description>18</description>
+	<description>Duncan Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Duncan Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">45</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -224,12 +224,12 @@
   </Placemark>
   <Placemark>
 	<name>M0065</name>
-	<description>18</description>
+	<description>Nandeebie Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Nandeebie Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">72</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">3</SimpleData>
@@ -239,27 +239,27 @@
   </Placemark>
   <Placemark>
 	<name>M0803</name>
-	<description>18</description>
+	<description>Bayview Conservation Area</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Bayview Conservation Area</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">106</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
 		<SimpleData name="GlobalID">9b95a2ad-5169-4dfc-af88-0d876c802e74</SimpleData>
 	</SchemaData></ExtendedData>
-      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>153.264209155802,-27.634357479402 153.264261585611,-27.6342201545511 153.264308639958,-27.634144877518 153.26488453707,-27.63418357669 153.265456342307,-27.6342541410279 153.26561738535,-27.6343557267879 153.265458970492,-27.6353433321769 153.265209220443,-27.6353653076711 153.264891440593,-27.6353802464574 153.264537316938,-27.6353379278226 153.264340002433,-27.6352594802964 153.264182994641,-27.6352132018305 153.264230779547,-27.6350088866305 153.264262446711,-27.6347938528129 153.264250076947,-27.63466847593 153.264197520453,-27.634561089304 153.264201251087,-27.6344392639423 153.264209155802,-27.634357479402</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>153.263840440316,-27.6356056325415 153.263679360393,-27.6355889784945 153.263528171091,-27.6354822945906 153.262833092838,-27.6353212626251 153.261685674263,-27.6350707382412 153.261711063479,-27.6349957701831 153.26281591985,-27.6352217555253 153.263484652743,-27.6353660271171 153.263659519104,-27.6354448363124 153.263782379507,-27.6355066754948 153.263950429408,-27.6354469136668 153.264124755951,-27.6353006938522 153.264162902397,-27.6352864648362 153.26414328792,-27.6352923295857 153.264203756047,-27.6352202048076 153.264218667692,-27.6351166627623 153.264272859916,-27.6345359850304 153.264272578827,-27.6344189700579 153.264252192672,-27.6343469992855 153.264138374579,-27.6342056459199 153.264174365123,-27.6342101320982 153.26421253404,-27.6342126698655 153.264272232875,-27.6342749523913 153.264317841993,-27.634328872016 153.264333110262,-27.6343738488146 153.264308568481,-27.6346754349893 153.264289090454,-27.6349815118168 153.264264331193,-27.6351930856896 153.264264464505,-27.635248582439 153.264371603778,-27.6352086192808 153.264735290376,-27.6352566355383 153.26510906176,-27.6352956300254 153.265153221154,-27.6352023488544 153.265240989742,-27.6343462213976 153.265178740501,-27.6343202503137 153.264813248432,-27.6342768554212 153.264264250362,-27.6342167198429 153.261938711844,-27.6339917277404 153.261958295631,-27.633919806614 153.262693673793,-27.6339981242531 153.263418968463,-27.6340854586789 153.26415684331,-27.6341502619462 153.264520733423,-27.6341849218913 153.264884623757,-27.63421958088 153.265162913778,-27.6342413764897 153.26544122562,-27.6342721721359 153.26561738535,-27.6343557267879 153.265630951156,-27.6346475317857 153.265617422024,-27.6347529689618 153.265553338471,-27.6348495004949 153.26550588304,-27.6349839021448 153.265553043582,-27.6351094750021 153.265479129547,-27.6353207910995 153.265464511075,-27.6353966401828 153.26542958046,-27.6354320234718 153.265308905011,-27.6353858726509 153.265209220443,-27.6353653076711 153.264906525009,-27.6353487136159 153.264714313756,-27.6353320841149 153.264532177276,-27.6353019332752 153.264340121389,-27.6353089862777 153.264211267313,-27.6353624529143 153.264126158599,-27.6354445542098 153.264000611156,-27.6355222321137 153.263840440316,-27.6356056325415</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
   </Placemark>
   <Placemark>
 	<name>M0869</name>
-	<description>18</description>
+	<description>Harrington Boulevard</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Harrington Boulevard</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">113</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -269,12 +269,12 @@
   </Placemark>
   <Placemark>
 	<name>M0307</name>
-	<description>18</description>
+	<description>Sunningdale Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Sunningdale Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">137</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -284,12 +284,12 @@
   </Placemark>
   <Placemark>
 	<name>M0298</name>
-	<description>18</description>
+	<description>Potts Place</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Potts Place</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">141</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -299,12 +299,12 @@
   </Placemark>
   <Placemark>
 	<name>M0258</name>
-	<description>18</description>
+	<description>Baylink Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Baylink Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">144</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -314,12 +314,12 @@
   </Placemark>
   <Placemark>
 	<name>M0267</name>
-	<description>18</description>
+	<description>Emperor Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Emperor Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">151</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -329,12 +329,12 @@
   </Placemark>
   <Placemark>
 	<name>M0279</name>
-	<description>18</description>
+	<description>Lanyard Place</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Lanyard Place</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">152</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -344,12 +344,12 @@
   </Placemark>
   <Placemark>
 	<name>M0326</name>
-	<description>18</description>
+	<description>Mount Cotton Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Mount Cotton Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">154</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">5</SimpleData>
@@ -359,12 +359,12 @@
   </Placemark>
   <Placemark>
 	<name>M0245</name>
-	<description>18</description>
+	<description>Sunshine Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Sunshine Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">184</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">3</SimpleData>
@@ -374,12 +374,12 @@
   </Placemark>
   <Placemark>
 	<name>M0299</name>
-	<description>18</description>
+	<description>Primrose Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Primrose Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">189</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -389,12 +389,12 @@
   </Placemark>
   <Placemark>
 	<name>M0320</name>
-	<description>18</description>
+	<description>Wilson Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Wilson Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">192</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -404,12 +404,12 @@
   </Placemark>
   <Placemark>
 	<name>M0158</name>
-	<description>18</description>
+	<description>Sylvania Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Sylvania Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">201</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -419,12 +419,12 @@
   </Placemark>
   <Placemark>
 	<name>M0129</name>
-	<description>18</description>
+	<description>Jasper Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Jasper Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">203</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -434,12 +434,12 @@
   </Placemark>
   <Placemark>
 	<name>M0103</name>
-	<description>18</description>
+	<description>Agnes Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Agnes Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">214</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -449,12 +449,12 @@
   </Placemark>
   <Placemark>
 	<name>M0225</name>
-	<description>18</description>
+	<description>Lucy Court</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Lucy Court</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">227</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">3</SimpleData>
@@ -464,12 +464,12 @@
   </Placemark>
   <Placemark>
 	<name>M0136</name>
-	<description>18</description>
+	<description>Leon St and Fisher Rd</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Leon St and Fisher Rd</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">239</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -479,12 +479,12 @@
   </Placemark>
   <Placemark>
 	<name>M0188</name>
-	<description>18</description>
+	<description>Killarney Crescent 1</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Killarney Crescent 1</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">241</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -494,12 +494,12 @@
   </Placemark>
   <Placemark>
 	<name>M0189</name>
-	<description>18</description>
+	<description>Killarney Crescent 2</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Killarney Crescent 2</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">242</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -509,12 +509,12 @@
   </Placemark>
   <Placemark>
 	<name>M0174</name>
-	<description>18</description>
+	<description>Chatsworth Circuit 1</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Chatsworth Circuit 1</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">243</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -524,12 +524,12 @@
   </Placemark>
   <Placemark>
 	<name>M0181</name>
-	<description>18</description>
+	<description>Glover Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Glover Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">247</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -539,12 +539,12 @@
   </Placemark>
   <Placemark>
 	<name>M0170</name>
-	<description>18</description>
+	<description>Bowen Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Bowen Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">248</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -554,12 +554,12 @@
   </Placemark>
   <Placemark>
 	<name>M0290</name>
-	<description>18</description>
+	<description>Penrose Avenue</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Penrose Avenue</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">260</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -569,12 +569,12 @@
   </Placemark>
   <Placemark>
 	<name>M0315</name>
-	<description>18</description>
+	<description>Tokay Court</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Tokay Court</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">269</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -584,12 +584,12 @@
   </Placemark>
   <Placemark>
 	<name>M0195</name>
-	<description>18</description>
+	<description>Nova Court</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Nova Court</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">281</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -599,12 +599,12 @@
   </Placemark>
   <Placemark>
 	<name>M0205</name>
-	<description>18</description>
+	<description>Winter Memorial Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Winter Memorial Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">285</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -614,12 +614,12 @@
   </Placemark>
   <Placemark>
 	<name>M0111</name>
-	<description>18</description>
+	<description>Bryce Place</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Bryce Place</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">291</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -629,12 +629,12 @@
   </Placemark>
   <Placemark>
 	<name>M0165</name>
-	<description>18</description>
+	<description>Wren Court Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Wren Court Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">293</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -644,12 +644,12 @@
   </Placemark>
   <Placemark>
 	<name>M0143</name>
-	<description>18</description>
+	<description>Pandanus Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Pandanus Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">294</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -659,12 +659,12 @@
   </Placemark>
   <Placemark>
 	<name>M0202</name>
-	<description>18</description>
+	<description>Sylvania Street Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Sylvania Street Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">297</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -674,12 +674,12 @@
   </Placemark>
   <Placemark>
 	<name>M0262</name>
-	<description>18</description>
+	<description>Brookvale Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Brookvale Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">302</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -689,12 +689,12 @@
   </Placemark>
   <Placemark>
 	<name>M0314</name>
-	<description>18</description>
+	<description>Tindappah Drive South</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Tindappah Drive South</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">328</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -704,12 +704,12 @@
   </Placemark>
   <Placemark>
 	<name>M0256</name>
-	<description>18</description>
+	<description>Bankswood Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Bankswood Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">333</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -719,12 +719,12 @@
   </Placemark>
   <Placemark>
 	<name>M0221</name>
-	<description>18</description>
+	<description>Hilliard Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Hilliard Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">339</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">3</SimpleData>
@@ -734,12 +734,12 @@
   </Placemark>
   <Placemark>
 	<name>M0121</name>
-	<description>18</description>
+	<description>Goodall Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Goodall Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">343</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -749,12 +749,12 @@
   </Placemark>
   <Placemark>
 	<name>M0117</name>
-	<description>18</description>
+	<description>Crossley Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Crossley Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">344</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -764,12 +764,12 @@
   </Placemark>
   <Placemark>
 	<name>M0159</name>
-	<description>18</description>
+	<description>Trafalgarvale Avenue</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Trafalgarvale Avenue</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">345</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -779,12 +779,12 @@
   </Placemark>
   <Placemark>
 	<name>M0140</name>
-	<description>18</description>
+	<description>Mary Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Mary Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">347</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -794,12 +794,12 @@
   </Placemark>
   <Placemark>
 	<name>M0163</name>
-	<description>18</description>
+	<description>Victor Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Victor Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">348</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -809,12 +809,12 @@
   </Placemark>
   <Placemark>
 	<name>M0147</name>
-	<description>18</description>
+	<description>Railway Parade</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Railway Parade</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">349</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -824,12 +824,12 @@
   </Placemark>
   <Placemark>
 	<name>M0160</name>
-	<description>18</description>
+	<description>Tulipwood Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Tulipwood Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">351</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -839,12 +839,12 @@
   </Placemark>
   <Placemark>
 	<name>M0112</name>
-	<description>18</description>
+	<description>Byng Road Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Byng Road Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">353</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -854,12 +854,12 @@
   </Placemark>
   <Placemark>
 	<name>M0145</name>
-	<description>18</description>
+	<description>Pedwell Place</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Pedwell Place</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">354</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -869,12 +869,12 @@
   </Placemark>
   <Placemark>
 	<name>M0161</name>
-	<description>18</description>
+	<description>Tulloch Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Tulloch Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">362</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -884,12 +884,12 @@
   </Placemark>
   <Placemark>
 	<name>M0150</name>
-	<description>18</description>
+	<description>Rosella Street Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Rosella Street Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">365</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -899,12 +899,12 @@
   </Placemark>
   <Placemark>
 	<name>M0180</name>
-	<description>18</description>
+	<description>George Street Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">George Street Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">366</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -914,12 +914,12 @@
   </Placemark>
   <Placemark>
 	<name>M0198</name>
-	<description>18</description>
+	<description>Sarah Court</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Sarah Court</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">372</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -929,12 +929,12 @@
   </Placemark>
   <Placemark>
 	<name>M0182</name>
-	<description>18</description>
+	<description>Gundagai Drive Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Gundagai Drive Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">374</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -944,12 +944,12 @@
   </Placemark>
   <Placemark>
 	<name>M0191</name>
-	<description>18</description>
+	<description>Lyndon and Mahogany Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Lyndon and Mahogany Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">375</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -959,12 +959,12 @@
   </Placemark>
   <Placemark>
 	<name>M0171</name>
-	<description>18</description>
+	<description>Burwood Road 1</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Burwood Road 1</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">379</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -974,12 +974,12 @@
   </Placemark>
   <Placemark>
 	<name>M0043</name>
-	<description>18</description>
+	<description>Hanover Drive Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Hanover Drive Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">385</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -989,12 +989,12 @@
   </Placemark>
   <Placemark>
 	<name>M0183</name>
-	<description>18</description>
+	<description>Heffernan Road Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Heffernan Road Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">387</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -1004,12 +1004,12 @@
   </Placemark>
   <Placemark>
 	<name>M0146</name>
-	<description>18</description>
+	<description>Pistachio Court Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Pistachio Court Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">390</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1019,12 +1019,12 @@
   </Placemark>
   <Placemark>
 	<name>M0300</name>
-	<description>18</description>
+	<description>Regency Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Regency Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">397</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1034,12 +1034,12 @@
   </Placemark>
   <Placemark>
 	<name>M0310</name>
-	<description>18</description>
+	<description>Sunshine Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Sunshine Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">403</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1049,12 +1049,12 @@
   </Placemark>
   <Placemark>
 	<name>M0296</name>
-	<description>18</description>
+	<description>Poinciana Avenue</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Poinciana Avenue</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">406</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1064,12 +1064,12 @@
   </Placemark>
   <Placemark>
 	<name>M0291</name>
-	<description>18</description>
+	<description>Peppermint Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Peppermint Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">407</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1079,12 +1079,12 @@
   </Placemark>
   <Placemark>
 	<name>M0311</name>
-	<description>18</description>
+	<description>Sycamore Parade Drain</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Sycamore Parade Drain</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">408</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1094,12 +1094,12 @@
   </Placemark>
   <Placemark>
 	<name>M0123</name>
-	<description>18</description>
+	<description>Helens Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Helens Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">413</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1109,12 +1109,12 @@
   </Placemark>
   <Placemark>
 	<name>M0173</name>
-	<description>18</description>
+	<description>Chantelle Court</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Chantelle Court</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">414</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -1124,12 +1124,12 @@
   </Placemark>
   <Placemark>
 	<name>M0167</name>
-	<description>18</description>
+	<description>Babiana Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Babiana Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">415</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -1139,12 +1139,12 @@
   </Placemark>
   <Placemark>
 	<name>M0086</name>
-	<description>18</description>
+	<description>Panorama Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Panorama Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">421</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1154,12 +1154,12 @@
   </Placemark>
   <Placemark>
 	<name>M0253</name>
-	<description>18</description>
+	<description>Abbotsleigh Street Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Abbotsleigh Street Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">425</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1169,12 +1169,12 @@
   </Placemark>
   <Placemark>
 	<name>M0268</name>
-	<description>18</description>
+	<description>Eprapah Estate (Liriope Pl)</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Eprapah Estate (Liriope Pl)</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">428</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1184,12 +1184,12 @@
   </Placemark>
   <Placemark>
 	<name>M0391</name>
-	<description>18</description>
+	<description>Mecoli Court</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Mecoli Court</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">475</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1199,12 +1199,12 @@
   </Placemark>
   <Placemark>
 	<name>M0364</name>
-	<description>18</description>
+	<description>Fisher Road to Mooroondu sportsfields</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Fisher Road to Mooroondu sportsfields</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">482</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1214,12 +1214,12 @@
   </Placemark>
   <Placemark>
 	<name>M0672</name>
-	<description>18</description>
+	<description>Honeysuckle Court to Belah Court</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Honeysuckle Court to Belah Court</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">492</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1229,12 +1229,12 @@
   </Placemark>
   <Placemark>
 	<name>M0616</name>
-	<description>18</description>
+	<description>Bay Breeze Avenue to Reserve area</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Bay Breeze Avenue to Reserve area</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">548</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1244,12 +1244,12 @@
   </Placemark>
   <Placemark>
 	<name>M0557</name>
-	<description>18</description>
+	<description>Coburg Street East to Wynyard Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Coburg Street East to Wynyard Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">589</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">3</SimpleData>
@@ -1259,12 +1259,12 @@
   </Placemark>
   <Placemark>
 	<name>M0508</name>
-	<description>18</description>
+	<description>Philippa Court next to No. 12</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Philippa Court next to No. 12</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">617</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -1274,12 +1274,12 @@
   </Placemark>
   <Placemark>
 	<name>M0108</name>
-	<description>18</description>
+	<description>Belford Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Belford Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">714</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1289,12 +1289,12 @@
   </Placemark>
   <Placemark>
 	<name>M0333</name>
-	<description>18</description>
+	<description>Allan Day Drive (House 39)</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Allan Day Drive (House 39)</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">736</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1304,12 +1304,12 @@
   </Placemark>
   <Placemark>
 	<name>M0322</name>
-	<description>18</description>
+	<description>Baradine Street Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Baradine Street Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">738</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">5</SimpleData>
@@ -1319,12 +1319,12 @@
   </Placemark>
   <Placemark>
 	<name>M0414</name>
-	<description>18</description>
+	<description>Bunker &amp; Brookvale Corner</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Bunker &amp; Brookvale Corner</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">748</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1334,12 +1334,12 @@
   </Placemark>
   <Placemark>
 	<name>M0415</name>
-	<description>18</description>
+	<description>Prospect Crescent Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Prospect Crescent Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">749</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1349,12 +1349,12 @@
   </Placemark>
   <Placemark>
 	<name>M0792</name>
-	<description>18</description>
+	<description>Capalaba Gateway Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Capalaba Gateway Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">773</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -1364,12 +1364,12 @@
   </Placemark>
   <Placemark>
 	<name>M0796</name>
-	<description>18</description>
+	<description>Arlington Street Park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Arlington Street Park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">776</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">3</SimpleData>
@@ -1379,12 +1379,12 @@
   </Placemark>
   <Placemark>
 	<name>M0815</name>
-	<description>18</description>
+	<description>Wren Court to Parakeet Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Wren Court to Parakeet Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">783</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1394,12 +1394,12 @@
   </Placemark>
   <Placemark>
 	<name>M1505</name>
-	<description>18</description>
+	<description>1 Willard Road</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">1 Willard Road</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1003</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -1409,12 +1409,12 @@
   </Placemark>
   <Placemark>
 	<name>M1543</name>
-	<description>18</description>
+	<description>Duncan Road Baseball</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Duncan Road Baseball</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1034</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">2</SimpleData>
@@ -1424,12 +1424,12 @@
   </Placemark>
   <Placemark>
 	<name>M0087</name>
-	<description>18</description>
+	<description>Pinklands</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Pinklands</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1057</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1439,12 +1439,12 @@
   </Placemark>
   <Placemark>
 	<name>M0304</name>
-	<description>18</description>
+	<description>Sandy Drive</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Sandy Drive</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1060</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1454,12 +1454,12 @@
   </Placemark>
   <Placemark>
 	<name>M1679</name>
-	<description>18</description>
+	<description>Congreve Cresent park</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Congreve Cresent park</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1167</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1469,12 +1469,12 @@
   </Placemark>
   <Placemark>
 	<name>M1682</name>
-	<description>18</description>
+	<description>Marcoola Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Marcoola Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1182</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1484,12 +1484,12 @@
   </Placemark>
   <Placemark>
 	<name>M1507</name>
-	<description>18</description>
+	<description>Station Street</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Station Street</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1202</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1499,12 +1499,12 @@
   </Placemark>
   <Placemark>
 	<name>M2021</name>
-	<description>18</description>
+	<description>Kingsdale Ave</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Kingsdale Ave</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1228</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1514,12 +1514,12 @@
   </Placemark>
   <Placemark>
 	<name>M0019</name>
-	<description>18</description>
+	<description>Bayswood Circuit</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Bayswood Circuit</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1250</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
@@ -1529,12 +1529,12 @@
   </Placemark>
   <Placemark>
 	<name>M1698</name>
-	<description>18</description>
+	<description>Arbor Terrace, Wellington Point</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Arbor Terrace, Wellington Point</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1254</SimpleData>
 		<SimpleData name="Tender_Doc">Zones</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">1</SimpleData>
@@ -1544,12 +1544,12 @@
   </Placemark>
   <Placemark>
 	<name>M0503</name>
-	<description>18</description>
+	<description>Robb Street Park - Off Clay Gully Road</description>
 	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__2_">
-		<SimpleData name="Name">Robb Street Park - Off Clay Gully Road</SimpleData>
+	<ExtendedData><SchemaData schemaUrl="#2425_Mowing_and_Vegetation_Management_Services_MowingVIEW_300326740000098154__3_">
 		<SimpleData name="OBJECTID">1344</SimpleData>
 		<SimpleData name="Tender_Doc">Zone</SimpleData>
+		<SimpleData name="CutsPerYear">18</SimpleData>
 		<SimpleData name="AreaType">Mowing – Parks</SimpleData>
 		<SimpleData name="Agent">Tender</SimpleData>
 		<SimpleData name="OSS_CATCHMENT">4</SimpleData>
